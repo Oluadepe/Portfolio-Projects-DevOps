@@ -12,7 +12,7 @@ region_name="$4"
 instance_id_2="$5"
 volume_id_2="$6"
 device_name_2="$7"
-remote_server="ubuntu@54.214.207.19"
+remote_server="<replace with public ip of the machine to restore>" #example remote_server="0.0.0.0"
 
 function exit_status() {
 if [ "$1" -eq 0 ]; then
