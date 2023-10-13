@@ -37,10 +37,9 @@ The Flask application can be run on development server using app.run(host="0.0.0
    If you want to push your image to docker hub, you will first need to create a user account on docker hub. re-tag you image to include you dockehub username, then push the image to dockerhub or any other private repository.
     
    Follow the steps below:
-   - command  to retag image 
-    replace "oluadepe" with your dockerhub username
-     
-       docker tag flask-app:1.0 oluadepe/flask-app:1.0
+   command  to retag image 
+   replace "oluadepe" with your dockerhub username
+     docker tag flask-app:1.0 oluadepe/flask-app:1.0
 
    - command to login to dockerhub from terminal 
     replace "oluadepe" with your dockerhub username
@@ -51,6 +50,3 @@ The Flask application can be run on development server using app.run(host="0.0.0
     replace "oluadepe" with your dockerhub username
      
       docker push oluadepe/flask-app
-
-
-     docker push oluadepe/flask-app
