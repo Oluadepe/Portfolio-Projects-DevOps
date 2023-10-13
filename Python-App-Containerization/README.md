@@ -51,4 +51,6 @@ The Flask application can be run on development server using app.run(host="0.0.0
     replace "oluadepe" with your dockerhub username
      
       docker push oluadepe/flask-app
-   
+
+
+     docker push oluadepe/flask-app
