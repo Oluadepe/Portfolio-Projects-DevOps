@@ -53,4 +53,4 @@ The Flask application can be run on development server using app.run(host="0.0.0
 
 ## Testing 
     Check if this is fine
-     docker push oluadepe/flask-app
+      docker push oluadepe/flask-app
