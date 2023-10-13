@@ -33,13 +33,13 @@ The Flask application can be run on development server using app.run(host="0.0.0
    - docker run -p 8080:5000 flask-app:1.0 "-p" stand for port "8080:5000" means using port 8080 on your system to connect to port 5000 on the container.
    ```docker run-p 8080:5000 flask-app:1.0```
 ## Addional information
-    if you want to push your image to docker hub, you will first need to create a user account on docker hub , re-tag you image to include you dockehub username, then push the image to dockerhub or any other private repository.
+    if you want to push your image to docker hub, you will first need to create a user account on docker hub. re-tag you image to include you dockehub username, then push the image to dockerhub or any other private repository.
     
     Follow the steps below:
-   command ```docker tag flask-app:1.0 oluadepe/flask-app:1.0```
+   command  to retag image ```docker tag flask-app:1.0 oluadepe/flask-app:1.0```
 
-   ```docker login -u oluadepe```
+   command to login to dockerhub from terminal ```docker login -u oluadepe```
    
-   ```docker push mayol/flask-app```
+   command to push image to dockerhub ```docker push oluadepe/flask-app```
     replace "oluadepe" with your dockerhub username
    
