@@ -24,24 +24,28 @@ The Flask application can be run on development server using app.run(host="0.0.0
 
 ## Building the Docker Image
    To build an image of the flask application, follow the steps below:
-   - cd into the project folder ``` cd <project folder>```
+   - cd into the project folder 
+    ``` cd <project folder>```
    - Run the "docker build" command with "-t" flag to tag the image with a name and "." to tell docker use the current directory to build the image. In this instance I tag the image as "flask-app" and ":1.0" as version of the app. Some use "latest" but its better to use number so you can identify the current version you have. 
-   ```docker build -t flask-app:1.0 .``` 
+     docker build -t flask-app:1.0 .
 
 ## Running the Docker Container
    Once the image is successfully build with the tag, you can run the image as a container using the command below
    - docker run -p 8080:5000 flask-app:1.0 "-p" stand for port "8080:5000" means using port 8080 on your system to connect to port 5000 on the container.
-   ```docker run-p 8080:5000 flask-app:1.0```
+     docker run-p 8080:5000 flask-app:1.0
 ## Addional information
    If you want to push your image to docker hub, you will first need to create a user account on docker hub. re-tag you image to include you dockehub username, then push the image to dockerhub or any other private repository.
     
    Follow the steps below:
-   command  to retag image ```docker tag flask-app:1.0 oluadepe/flask-app:1.0```
-
-   command to login to dockerhub from terminal ```docker login -u oluadepe```
-   
-   command to push image to dockerhub ```docker push oluadepe/flask-app```
+   - command  to retag image 
     replace "oluadepe" with your dockerhub username
+     docker tag flask-app:1.0 oluadepe/flask-app:1.0
 
+   - command to login to dockerhub from terminal 
+    replace "oluadepe" with your dockerhub username
+     docker login -u oluadepe
+   
+   - command to push image to dockerhub
+    replace "oluadepe" with your dockerhub username
      docker push oluadepe/flask-app
    
